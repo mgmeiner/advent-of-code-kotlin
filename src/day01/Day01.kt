@@ -1,3 +1,8 @@
+package day01
+
+import readInput
+import toNumbers
+
 fun main() {
     fun countIncreases(numbers: List<Int>): Int {
         var increasedCount = 0
@@ -22,11 +27,11 @@ fun main() {
         return countIncreases(numbers)
     }
 
-    val testInput = readInput("Day01_test")
+    val testInput = readInput("day01", "test")
     check(part1(testInput) == 7)
     check(part2(testInput) == 5)
 
-    val input = readInput("Day01_input")
+    val input = readInput("day01", "input")
     println(part1(input))
     println(part2(input))
 }
