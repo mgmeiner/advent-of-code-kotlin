@@ -9,6 +9,8 @@ fun readInput(day: String, name: String) = File("src", "$day/$name.txt").readLin
 
 fun readInputAsString(day: String, name: String) = File("src", "$day/$name.txt").readText()
 
+fun readAsInts(day: String, name: String) = readInputAsString(day, name).split(",").map { it.toInt() }
+
 /**
  * Converts string to md5 hash.
  */
